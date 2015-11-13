@@ -1,0 +1,26 @@
+{
+  "AWSEBDockerrunVersion": "2",
+  "containerDefinitions": [
+    {
+      "name": "boomcatch",
+      "image": "quay.io/apeckham/boomcatch",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": [
+        "statsd"
+      ]
+    },
+    {
+      "name": "statsd",
+      "image": "datadog/docker-dd-agent",
+      "essential": true,
+      "memory": 128
+    }
+  ]
+}
