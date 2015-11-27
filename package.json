@@ -1,0 +1,22 @@
+{
+  "name": "docker-boomcatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apeckham/docker-boomcatch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apeckham/docker-boomcatch/issues"
+  },
+  "homepage": "https://github.com/apeckham/docker-boomcatch#readme",
+  "dependencies": {
+    "boomcatch": "^3.0.4"
+  }
+}

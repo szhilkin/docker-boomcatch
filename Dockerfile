@@ -1,5 +1,4 @@
-FROM mhart/alpine-node
+FROM node:4-onbuild
 
-RUN npm install -g boomcatch
-ENTRYPOINT "boomcatch" "--fwdHost" "statsd" "--silent"
-
+ENTRYPOINT ["./node_modules/.bin/boomcatch"]
+CMD ["--fwdHost", "statsd"]
